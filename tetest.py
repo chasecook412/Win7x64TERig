@@ -30,7 +30,7 @@ class SI(object):
     def reserve(self, user_id):
         url = "http://crossbrowsertesting.com/reports/reserve.php?user_id={}&config_id={}&si={}".format(user_id, self.config_id, self.si)
         # print("reserving: " + url)
-        requests.get(url, auth=HTTPBasicAuth('cbtadmin', 'dumb'))
+        requests.get(url, auth=HTTPBasicAuth('stupid', 'dumb'))
 
     def __str__(self):
         return str(self.si)+', '+str(self.config_id)+', '+self.os_api_name
